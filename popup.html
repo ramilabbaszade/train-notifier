@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 40rem;
+        }
+
+        .popup {
+            width: 100%;
+            padding: .5rem 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .popup__inputs {
+            display: flex;
+            gap: 1rem;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="popup">
+    <div class="popup__inputs">
+        <form action="" class="js-form">
+            <input id="time" type="time" placeholder="Enter time">
+            <select id="period">
+                <option value="EveryDay">EveryDay</option>
+                <option value="WeekDays">WeekDays</option>
+                <option value="EveryWeekend">EveryWeekend</option>
+            </select>
+            <input id="beforeMin" type="number" placeholder="Alarm before minute">
+            <button>Add</button>
+        </form>
+    </div>
+    <ul id="lists">
+        <li>In week, 14:00, alarm before 20 min <span id="remove" style="color: red">remove</span></li>
+    </ul>
+</div>
+</body>
+<script src="main.js"></script>
+</html>

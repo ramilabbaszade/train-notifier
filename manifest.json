@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Train notifier",
+  "version": "1.0.1",
+  "description": "Notify before train leaves station",
+  "author": "ramilabbaszade",
+  "icons": {
+    "528": "trainoclock.png"
+  },
+  "browser_action": {
+    "default_icon":"trainoclock.png",
+    "default_title":"Train notifier",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["main.js"]
+  }
+}
