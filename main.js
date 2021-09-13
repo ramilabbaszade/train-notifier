@@ -1,8 +1,12 @@
+const audio = new Audio('sound.mp3');
+
 let items = [
-    {period:"Weekdays",time:"22:00",beforeMin:"30"}
+    {period:"Weekdays",time:"11:16",beforeMin:"30"}
 ]
 const date = new Date()
 const currentTime = date.getHours()+':'+date.getMinutes()
+
+audio.play()
 
 function addNewTime(newObj){
     items.push(newObj)
@@ -54,5 +58,6 @@ function renderDefaultItems(){
 document.querySelector("#remove").addEventListener("click",(res)=>{
     console.log(res)
 })
+
 
 renderDefaultItems()
