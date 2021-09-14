@@ -6,8 +6,6 @@ let items = [
 const date = new Date()
 const currentTime = date.getHours()+':'+date.getMinutes()
 
-audio.play()
-
 function addNewTime(newObj){
     items.push(newObj)
     console.log(items)
@@ -30,6 +28,7 @@ form.addEventListener('submit',e=>{
         beforeMin.value = ""
         renderResult(reqObj)
     }
+    audio.play()
 })
 
 function renderResult(myObj){
@@ -45,13 +44,9 @@ function renderResult(myObj){
 
 function renderDefaultItems(){
     document.addEventListener('DOMContentLoaded', () => {
-        // const ref = localStorage.getItem('todoItemsRef');
-        // if () {
-        // todoItems = JSON.parse(ref);
         items.forEach(t => {
             renderResult(t);
         });
-        // }
     });
 }
 
