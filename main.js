@@ -28,7 +28,7 @@ form.addEventListener('submit',e=>{
         beforeMin.value = ""
         renderResult(reqObj)
     }
-    audio.play()
+    audio.play().then(()=>{})
 })
 
 function renderResult(myObj){
